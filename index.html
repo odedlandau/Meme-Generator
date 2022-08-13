@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeMe Generator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="main-layout" onload="onInit()">
+
+    <header class="main-header-container full main-layout">
+        <div class="main-header flex space-between align-center">
+            <img src="img/LOGO.png" class="logo" alt="MemeGen logo" />
+            <nav class="main-nav">
+                <ul class="main-nav-list flex clean-list">
+                    <li><a onclick="openGallery()" href="#">Gallery</a></li>
+                    <li><a href="#"></a>Memes</li>
+                    <li><a href="#"></a>About</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <section class="filter-bar flex center">
+            <div class="main-layout flex space-between">
+                <input class="input-search" placeholder="Search by key words" oninput="onSetFilterBy(this.value)"
+                    list="filter-words">
+                <datalist id="filter-words">
+                    <option value="funny">
+                    <option value="baby">
+                    <option value="cute">
+                    <option value="celeb">
+                    <option value="movie">
+                    <option value="animal">
+                    <option value="movie">
+                    <option value="politics">
+                </datalist>
+            </div>
+        </section>
+        <div class="gallery-container main-layout grid">
+
+        </div>
+
+    </section>
+
+    <section class="editor flex space-around align-center">
+        <div class="canvas-container">
+            <canvas class="canvas" id="canvas" width="500px" height="500x"></canvas>
+        </div>
+        <div class="meme-editor grid">
+            <input class="line-input" type="text" name="text-line-input" placeholder="Edit text line"
+                oninput="onSetLineText(this.value)" />
+
+            <div class="btn switch-lines" onclick="onSwitchLine()">
+                <img src="/img/editor-btn/up-and-down-opposite-double-arrows-side-by-side.png" alt="">
+            </div>
+            <div class="btn add-line" onclick="onAddLine()"><img src="/img/editor-btn/add.png" alt=""></div>
+            <div class="btn remove-line" onclick="onRemoveLine()"><img src="/img/editor-btn/trash.png" alt=""></div>
+            <div class="btn increase-font" onclick="onChangeFontSize(1)"><img
+                    src="/img/editor-btn/increase font - icon.png" alt=""></div>
+            <div class="btn decrease-font" onclick="onChangeFontSize(-1)"><img
+                    src="/img/editor-btn/decrease font - icon.png" alt=""></div>
+            <div class="btn align-left" onclick="onSetAlign('left')"><img src="/img/editor-btn/align-to-left.png"
+                    alt=""></div>
+            <div class="btn align-center" onclick="onSetAlign('center')"><img
+                    src="/img/editor-btn/center-text-alignment.png" alt=""></div>
+            <div class="btn align-right" onclick="onSetAlign('right')"><img src="/img/editor-btn/align-to-right.png"
+                    alt=""></div>
+            <select class="btn set-font" onclick="onSetFont(this.value)" name="change-font" id="change-font">
+                <option value="impact">Impact</option>
+                <option value="AlfaSlabOne">AlfaSlab One</option>
+                <option value="RammettoOne">Rammetto One</option>
+            </select>
+            <div class="btn move-up" onclick="onMoveLine('up')"><img src="/img/editor-btn/up-arrow.png" alt=""></div>
+            <div class="btn move-down" onclick="onMoveLine('down')"><img src="/img/editor-btn/down-arrow.png" alt="">
+            </div>
+            <div class="btn stroke-color">
+                <input class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
+                <img src="/img/editor-btn/text stroke.png" alt="">
+            </div>
+            <div class="btn font-color">
+                <input class="color-input" onchange="onSetColor(this.value)" type="color">
+                <img src="/img/editor-btn/paint-board-and-brush.png" alt="">
+            </div>
+            <div class="btn download">
+                <img src="/img/editor-btn/download.png" alt="">
+            </div>
+            <!-- <a href="#" onclick="downloadCanvas(this)" download="cool-canvas">Download</a> -->
+        </div>
+
+    </section>
+
+    <footer class="main-footer-container full main-layout">
+        <div class="main-footer">
+            <div class="logo"><img src="img/LOGO.png" class="logo" alt="MemeGen logo" /></div>
+        </div>
+    </footer>
+
+    <script src="/js/memeController.js"></script>
+    <script src="/js/galleryController.js"></script>
+    <script src="/js/services/meme.service.js"></script>
+</body>
+
+</html>

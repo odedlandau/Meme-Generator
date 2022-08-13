@@ -1,0 +1,105 @@
+.canvas-container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.editor {
+    display: none;
+}
+
+.meme-editor {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 25px;
+    max-width: 50%
+}
+
+.editor .meme-editor img {
+    /* max-width: 50px; */
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.editor .meme-editor .btn {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.editor .meme-editor .line-input {
+    grid-column: 1/ -1;
+}
+
+.editor .meme-editor .switch-lines {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.editor .meme-editor .add-line {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.editor .meme-editor .remove-line {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.editor .meme-editor .increase-font {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.editor .meme-editor .decrease-font {
+    grid-column: 5;
+    grid-row: 3;
+}
+
+.editor .meme-editor .align-left {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.editor .meme-editor .align-center {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.editor .meme-editor .align-right {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.editor .meme-editor .set-font {
+    grid-column: 2;
+    grid-row: 4;
+    width: 100px;
+}
+
+.editor .meme-editor .stroke-color {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.editor .meme-editor .font-color {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.editor .meme-editor .move-up {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.editor .meme-editor .move-down {
+    grid-column: 5;
+    grid-row: 4;
+}
+
+.editor .meme-editor .download {
+    grid-column: 3;
+    grid-row: 5;
+    margin-top: 15px;
+    
+}

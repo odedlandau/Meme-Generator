@@ -1,0 +1,20 @@
+.main-header-container{
+    height: 66px;
+    background-color: var(--clr1);
+    /* position: sticky; */
+}
+
+.main-header .logo {
+    width: 170px;
+    padding: 11px 20px 11px 0px;
+}
+
+.main-header .main-nav-list >*{
+    font-size: 1.7rem;
+    font-family: Montserrat;
+    ;
+}
+
+.main-header .main-nav-list >*:not(last-child){
+    margin: 15px;
+}

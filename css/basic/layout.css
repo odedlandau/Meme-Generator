@@ -1,0 +1,5 @@
+.main-layout>*:not(.full) {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
