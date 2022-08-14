@@ -1,7 +1,7 @@
 'use strict'
 
-let gElCanvas = document.querySelector('#canvas')
-let gCtx = gElCanvas.getContext('2d')
+const gElCanvas = document.querySelector('#canvas')
+const gCtx = gElCanvas.getContext('2d')
 
 function renderMeme() {
     // gElCanvas = document.querySelector('#canvas')
