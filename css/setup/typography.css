@@ -12,3 +12,8 @@
     font-family: Staatliches;
     src: url(/fonts/Staatliches-Regular.ttf);
 }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Regular.ttf);
+}
