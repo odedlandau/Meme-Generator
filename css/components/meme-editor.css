@@ -5,14 +5,17 @@
 
 .editor {
     display: none;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(212, 212, 212);
 }
 
 .meme-editor {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
+    gap: 7px;
     justify-items: center;
+    /* background-color: #003865; */
+    padding: 10px;
+    border-radius: 4px;
     
 }
 
@@ -36,7 +39,7 @@
 .editor .meme-editor .line-input {
     grid-column: 1/ -1;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     border-radius: 10px;
     font-size: 28px;
     padding: 5px;

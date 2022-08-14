@@ -52,7 +52,7 @@
                 <canvas class="canvas" id="canvas" width="500px" height="500x"></canvas>
             </div>
             <div class="meme-editor grid">
-                    <input class="line-input" type="text" name="text-line-input" placeholder="Edit text line"
+                <input class="line-input" type="text" name="text-line-input" placeholder="Edit text line"
                     oninput="onSetLineText(this.value)" />
 
                 <div class="btn switch-lines" onclick="onSwitchLine()">
@@ -82,18 +82,16 @@
                 <div class="btn stroke-color">
                     <label for="stroke"><img src="img/editor-btn/text stroke.png" alt=""></label>
                     <input id="stroke" class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
-                    
-                    <!-- <input class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
-                    <img src="img/editor-btn/text stroke.png" alt=""> -->
                 </div>
                 <div class="btn font-color">
                     <label for="set-color"><img src="img/editor-btn/paint-board-and-brush.png" alt=""></label>
                     <input id="set-color" class="color-input" onchange="onSetColor(this.value)" type="color">
                 </div>
                 <div class="btn download">
-                    <img src="img/editor-btn/download.png" alt="">
+                    <a href="#" onclick="downloadCanvas(this)" download="cool-canvas"><img
+                            src="img/editor-btn/download.png" alt=""></a>
                 </div>
-                
+
             </div>
 
         </section>
