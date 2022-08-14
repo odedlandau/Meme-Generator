@@ -12,9 +12,16 @@
 .main-header .main-nav-list >*{
     font-size: 1.7rem;
     font-family: Montserrat;
-    ;
 }
 
 .main-header .main-nav-list >*:not(last-child){
     margin: 15px;
+}
+
+.main-header .main-nav-list a{
+    color: rgb(0, 0, 0);
+}
+
+.main-header .main-nav-list a:hover{
+    color: aliceblue;
 }

@@ -16,9 +16,9 @@
                 <img src="img/LOGO.png" class="logo" alt="MemeGen logo" />
                 <nav class="main-nav">
                     <ul class="main-nav-list flex clean-list">
-                        <li><a onclick="openGallery()" href="#">Gallery</a></li>
-                        <li><a href="#"></a>Memes</li>
-                        <li><a href="#"></a>About</li>
+                        <li><a class="nav-item" onclick="openGallery()" href="#">Gallery</a></li>
+                        <li><a class="nav-item" href="#"></a>Memes</li>
+                        <li><a class="nav-item" href="#"></a>About</li>
                     </ul>
                 </nav>
             </div>
@@ -52,7 +52,7 @@
                 <canvas class="canvas" id="canvas" width="500px" height="500x"></canvas>
             </div>
             <div class="meme-editor grid">
-                <input class="line-input" type="text" name="text-line-input" placeholder="Edit text line"
+                    <input class="line-input" type="text" name="text-line-input" placeholder="Edit text line"
                     oninput="onSetLineText(this.value)" />
 
                 <div class="btn switch-lines" onclick="onSwitchLine()">
@@ -64,12 +64,12 @@
                         src="img/editor-btn/increase font - icon.png" alt=""></div>
                 <div class="btn decrease-font" onclick="onChangeFontSize(-1)"><img
                         src="img/editor-btn/decrease font - icon.png" alt=""></div>
-                <div class="btn align-left" onclick="onSetAlign('left')"><img src="img/editor-btn/align-to-left.png"
+                <div class="btn align-left" onclick="onSetAlign('right')"><img src="img/editor-btn/align-to-left.png"
                         alt="">
                 </div>
                 <div class="btn align-center" onclick="onSetAlign('center')"><img
                         src="img/editor-btn/center-text-alignment.png" alt=""></div>
-                <div class="btn align-right" onclick="onSetAlign('right')"><img src="img/editor-btn/align-to-right.png"
+                <div class="btn align-right" onclick="onSetAlign('left')"><img src="img/editor-btn/align-to-right.png"
                         alt=""></div>
                 <select class="btn set-font" onclick="onSetFont(this.value)" name="change-font" id="change-font">
                     <option value="impact">Impact</option>
@@ -80,8 +80,11 @@
                 <div class="btn move-down" onclick="onMoveLine('down')"><img src="img/editor-btn/down-arrow.png" alt="">
                 </div>
                 <div class="btn stroke-color">
-                    <input class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
-                    <img src="img/editor-btn/text stroke.png" alt="">
+                    <label for="stroke"><img src="img/editor-btn/text stroke.png" alt=""></label>
+                    <input id="stroke" class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
+                    
+                    <!-- <input class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
+                    <img src="img/editor-btn/text stroke.png" alt=""> -->
                 </div>
                 <div class="btn font-color">
                     <label for="set-color"><img src="img/editor-btn/paint-board-and-brush.png" alt=""></label>
@@ -90,7 +93,7 @@
                 <div class="btn download">
                     <img src="img/editor-btn/download.png" alt="">
                 </div>
-                <!-- <a href="#" onclick="downloadCanvas(this)" download="cool-canvas">Download</a> -->
+                
             </div>
 
         </section>
