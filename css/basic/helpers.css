@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.flex.column{
+    flex-direction: column;
+}
+
 .clean-list {
     margin: 0;
     padding: 0;
