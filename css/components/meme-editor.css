@@ -1,4 +1,4 @@
-.canvas-container{
+.canvas-container {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -101,5 +101,9 @@
     grid-column: 3;
     grid-row: 5;
     margin-top: 15px;
-    
+
+}
+
+.color-input {
+    display: none;
 }

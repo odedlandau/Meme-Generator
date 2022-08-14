@@ -49,7 +49,8 @@
 
     <section class="editor flex space-around align-center">
         <div class="canvas-container">
-            <canvas class="canvas" id="canvas" width="500px" height="500x" style="border: 3px solid rgb(236, 16, 16);"></canvas>
+            <canvas class="canvas" id="canvas" width="500px" height="500x"
+                style="border: 3px solid rgb(236, 16, 16);"></canvas>
         </div>
         <div class="meme-editor grid">
             <input class="line-input" type="text" name="text-line-input" placeholder="Edit text line"
@@ -63,9 +64,9 @@
             <div class="btn increase-font" onclick="onChangeFontSize(1)"><img
                     src="img/editor-btn/increase font - icon.png" alt=""></div>
             <div class="btn decrease-font" onclick="onChangeFontSize(-1)"><img
-                    src= "img/editor-btn/decrease font - icon.png" alt=""></div>
-            <div class="btn align-left" onclick="onSetAlign('left')"><img src="img/editor-btn/align-to-left.png"
-                    alt=""></div>
+                    src="img/editor-btn/decrease font - icon.png" alt=""></div>
+            <div class="btn align-left" onclick="onSetAlign('left')"><img src="img/editor-btn/align-to-left.png" alt="">
+            </div>
             <div class="btn align-center" onclick="onSetAlign('center')"><img
                     src="img/editor-btn/center-text-alignment.png" alt=""></div>
             <div class="btn align-right" onclick="onSetAlign('right')"><img src="img/editor-btn/align-to-right.png"
@@ -76,15 +77,15 @@
                 <option value="RammettoOne">Rammetto One</option>
             </select>
             <div class="btn move-up" onclick="onMoveLine('up')"><img src="img/editor-btn/up-arrow.png" alt=""></div>
-            <div class="btn move-down" onclick="onMoveLine('down')"><img src= "img/editor-btn/down-arrow.png" alt="">
+            <div class="btn move-down" onclick="onMoveLine('down')"><img src="img/editor-btn/down-arrow.png" alt="">
             </div>
             <div class="btn stroke-color">
                 <input class="color-input" onchange="onSetStrokeColor(this.value)" type="color">
                 <img src="img/editor-btn/text stroke.png" alt="">
             </div>
             <div class="btn font-color">
-                <input class="color-input" onchange="onSetColor(this.value)" type="color">
-                <img src="img/editor-btn/paint-board-and-brush.png" alt="">
+                <label for="set-color"><img src="img/editor-btn/paint-board-and-brush.png" alt=""></label>
+                <input id="set-color" class="color-input" onchange="onSetColor(this.value)" type="color">
             </div>
             <div class="btn download">
                 <img src="img/editor-btn/download.png" alt="">
